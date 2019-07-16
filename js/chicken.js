@@ -1,10 +1,3 @@
-//$.getJSON (
-//    'https://api.myjson.com/bins/jcmhn',
-//    function(data){
-//        console.log(data);
-//    }
-//);
-
 function render(data) {
     for (i in data.text) {
         let text = data.text[i].replace(/{/g, '<span>');
@@ -36,9 +29,6 @@ $('#replace').click(function(){
     dict.var6 = $('#var6').val();
     dict.speach = $('#speach').val();
     const span = $('span');
-    for (let i = 0; i < span.length; i++){
-        console.log(span[i].innerHTML, dict[span[i].innerHTML]);
-    };
     for (let i = 0; i < span.length; i++){
         span[i].innerHTML = dict[span[i].innerHTML];
     };
