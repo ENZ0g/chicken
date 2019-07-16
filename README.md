@@ -1,2 +1,2 @@
-# chiken
+# chicken
 Js practice with replacing text by click the button
